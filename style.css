@@ -1,0 +1,93 @@
+body {
+    background-color: #C7C7C7;
+    color: #10191A;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "footer footer footer footer";
+}
+
+header {
+
+    background-color: #BB1800;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav";
+    color: #FFFFFF;
+
+
+}
+
+
+nav {
+    grid-area: nav;
+    padding: 15px;
+}
+
+header ul {
+    margin-top: 14px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header ul a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 3em;
+    color: #FFFFFF;
+    background-color: #BB1800;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+header ul a:hover {
+    background-color: #FFFFFF;
+    color: #BB1800;
+    transition-duration: 0.3s;
+    font-size: 3.4em;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "section article";
+
+
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+
+    grid-area: footer;
+    width: 100%;
+    text-align: center;
+    background-color: #BB1800;
+    color: #FFFFFF;
+    position: sticky;
+    bottom: 0;
+
+}

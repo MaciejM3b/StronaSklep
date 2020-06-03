@@ -1,0 +1,51 @@
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "section"
+        "artice";
+
+
+}
+
+main {
+    background-color: #ffffff;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    background-color: #ffffff;
+    margin: 2em;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+section div {
+    color: #BB1800;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+#wys {
+    width: 100%;
+    font-size: 1.2;
+}
